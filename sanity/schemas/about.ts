@@ -32,11 +32,6 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'name',
-      title: 'Name',
-      type: 'string',
-    }),
-    defineField({
       name: 'bio',
       title: 'Bio',
       type: 'array',
