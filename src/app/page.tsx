@@ -5,7 +5,7 @@ import { projects } from "../../testdata/projects";
 
 export default function Home() {
   return (
-    <div>
+    <main>
       Work in progress
       {/* <div className="grid grid-cols-3 gap-4">
       {projects.map((project, index) => (
@@ -30,6 +30,6 @@ export default function Home() {
         </div>
       ))}
       </div> */}
-    </div>
+    </main>
   );
 }
