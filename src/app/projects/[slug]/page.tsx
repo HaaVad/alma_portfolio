@@ -10,7 +10,7 @@ export default function Page() {
 const project = projects[0]
   return (
     <div className="container py-8">
-      <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
+      {/* <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
       <Image 
           src={project.images[0]} 
           alt={project.title} 
@@ -18,8 +18,19 @@ const project = projects[0]
           height={1200}
           priority={true}
           className="" />
-      {/* <PortableText value= {project.description} /> */}
+      <PortableText value= {project.description} />
       <p>{project.description}</p>
+      {project.videolink ? (
+        <div className="h-72">
+          <iframe
+            className="w-3/4"
+            src={project.videolink}
+            title="Embedded Video"
+            allowFullScreen
+          ></iframe>
+        </div>
+      ) : null} */}
+
     </div>
   );
 }

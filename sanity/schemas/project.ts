@@ -47,6 +47,11 @@ const project = defineType({
       type: 'url',
     }),
     defineField({
+      name: 'videolink',
+      title: 'videolink',
+      type: 'string',
+    }),
+    defineField({
       name: 'description',
       title: 'Description',
       type: 'array',

@@ -19,7 +19,7 @@ const project = projects[0]
           priority={true}
           className="" />
       {/* <PortableText value= {project.description} /> */}
-      <p>{project.description}</p>
+      <p>{project.description}</p> 
     </div>
   );
 }

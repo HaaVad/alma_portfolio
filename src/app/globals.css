@@ -19,7 +19,7 @@
 main {
   width: 100%;
   margin: 0;
-  padding: 0px;
+  padding: 10px;
   font: serif;
   background-color: #ffffff; 
   display: flex;
@@ -35,14 +35,20 @@ main {
   }
 }
 
-main{
-  padding: 0px;
+footer {
+  background-color: #000000; 
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
 
 }
 
 h1 {
-  font-size: 3em; 
-  font-weight: 340;
+  font-size: 3.5em; 
+  font-weight: 150;
   text-align: center;
   margin-top: 20px; 
   margin-bottom: 20px;
@@ -53,4 +59,8 @@ h2 {
   font-weight: 700;
   margin-top: 2px; 
   margin-bottom: 4px;
+}
+
+iframe {
+  margin: 5px;
 }

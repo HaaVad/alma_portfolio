@@ -5,16 +5,15 @@ import { projects } from "../../testdata/projects";
 
 export default function Home() {
   return (
-    <main>
-      Work in progress
-      {/* <div className="grid grid-cols-3 gap-4">
+    <main>A work in progress
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {projects.map((project, index) => (
         <div key={index} className="">
           {project.images[0] && (
             <Link 
             href={`/projects/${project.slug}`}             
             >
-            <div className="relative h-72 w-72">
+            <div className="relative h-72 w-80 lg:w-96">
             <Image
               src={project.images[0]}
               alt={project.title}
@@ -29,7 +28,10 @@ export default function Home() {
           )}
         </div>
       ))}
-      </div> */}
+      </div>
+      <iframe title="vimeo-player" src="https://player.vimeo.com/video/215403086?h=71e190b2f4" width="640" height="360" ></iframe>
+      <iframe width="864" height="486" src="https://www.youtube.com/embed/mqHVbK-T_6g" title="Hand On Off Tøyen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe> */}
+
     </main>
   );
 }
