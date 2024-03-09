@@ -24,7 +24,7 @@ export default function RootLayout({
         </div>
         </header>
       {children}
-      <footer className="h-40 mt-20"> 
+      <footer className="h-40 mt-20  bottom-0"> 
       <div>Alma</div>
       </footer>
       </body>

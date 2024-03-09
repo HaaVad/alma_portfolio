@@ -1,14 +1,14 @@
 import { PortableTextBlock } from "sanity";
+import { Image } from "sanity";
 
 export type Project = {
     _id: string;
     _createdAt: Date;
-    title: string;
+    name: string;
     slug: string;
-    // date: Date;
-    // link: string;
-    videolink: string;
-    description: string;
-    // description: PortableTextBlock[];
-    images: string[];
+    date: Date;
+    link: string;
+    videolink?: string;
+    description: PortableTextBlock[];
+    images: Image[];
 };

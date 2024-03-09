@@ -2,7 +2,7 @@
 
 const nextConfig = {
     images: {
-      domains: ['gfx.nrk.no'],
+      domains: ['cdn.sanity.io'],
     },
   };
   
