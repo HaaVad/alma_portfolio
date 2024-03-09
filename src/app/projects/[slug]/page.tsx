@@ -3,6 +3,7 @@ import { PortableText } from "@portabletext/react";
 import { getImageUrl } from "@/app/lib/utils";
 import { getProject } from "../../../../sanity/sanity-utils";
 import Link from "next/link";
+import Picture from "@/app/components/picture";
 
   type Props = {
     params: {slug: string};
@@ -31,15 +32,15 @@ export default async function Page({params}: Props) {
 
       </div>
 
-    <div className="mx-4 md:ml-20 my-4 grid grid-cols-1 md:grid-cols-2 gap-x-20">
+    <div className="mx-4 md:ml-20 my-4 grid grid-cols-1 md:grid-cols-2 gap-x-10">
       <div>
     {project.description.slice(1).map((project, index) => (
-        <div key={index} className="py-3">
+        <div key={index} className="pb-6">
         <PortableText value={project} />
         </div>
       ))}
       </div>
-      <div className="my-4">
+      <div className="pb-6 font-extralight">
       <PortableText value={project.description[0]} />
 
       <Image
@@ -54,17 +55,9 @@ export default async function Page({params}: Props) {
     </div>
       <div className="m-4 md:m-8 pt-14 my-4 grid grid-cols-1 md:grid-cols-3 gap-10">
     {project.images.slice(1).map((image, index) => (
-        <div key={index} className="py-2 relative h-96 w-20 lg:w-96 flex justify-center items-center">
-            <Image
-              src={getImageUrl(image)}
-              alt={project.name}
-              fill={true}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"              
-              className="object-cover"
-              priority={true}
-            />
-
-        </div>
+      <div key={index}>
+        <Picture image={getImageUrl(image)}></Picture>
+      </div>
         ))}
       </div>
 
@@ -85,3 +78,4 @@ export default async function Page({params}: Props) {
     </main>
   );
 }
+
