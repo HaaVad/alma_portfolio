@@ -68,15 +68,15 @@ console.log(project.images)
           <iframe
             className=""
             src={project.videolink}
-            title="Embedded Video"
             width="640" 
             height="360"
-            allowFullScreen
+            allow="autoplay; fullscreen; picture-in-picture"
           ></iframe>
         </div>
       ) : null}
     </div>
     </div>
+
     </main>
   );
 }
