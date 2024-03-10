@@ -12,15 +12,15 @@ projects.sort((a, b) => {
 
 export default function Home() {
 
-
+console.log(projects[2].images)
 
   return (
     <main>
       <div className="pt-8 px-4 md:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {projects.map((project, index) => (
         <div key={index} className="">
-          {project.images[0] && (
-            <Link 
+          {project.images && project.images.length > 0 && (            
+          <Link 
             href={`/projects/${project.slug}`}             
             >
             <div className="relative h-72 w-80 lg:w-96 flex justify-center items-center">

@@ -13,7 +13,8 @@ import Picture from "@/app/components/picture";
 export default async function Page({params}: Props) {
   const project = await getProject(params.slug);
 
-
+console.log(getImageUrl(project.images[0]))
+console.log(project.images)
   return (
     <main className="container">
 
