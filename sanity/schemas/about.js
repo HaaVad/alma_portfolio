@@ -1,8 +1,8 @@
 import {defineField, defineType} from 'sanity'
 
-export default defineType({
-  name: 'author',
-  title: 'Author',
+const about = defineType({
+  name: 'bio',
+  title: 'Bio',
   type: 'document',
   fields: [
     defineField({
@@ -10,15 +10,7 @@ export default defineType({
       title: 'Name',
       type: 'string',
     }),
-    defineField({
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {
-        source: 'name',
-        maxLength: 96,
-      },
-    }),
+
     defineField({
       name: 'image',
       title: 'Image',
@@ -35,6 +27,11 @@ export default defineType({
       ]
     }),
     defineField({
+      name: 'insta',
+      title: 'Insta',
+      type: 'string',
+    }),
+    defineField({
       name: 'bio',
       title: 'Bio',
       type: 'array',
@@ -47,6 +44,7 @@ export default defineType({
         },
       ],
     }),
+
   ],
   preview: {
     select: {
@@ -55,3 +53,5 @@ export default defineType({
     },
   },
 })
+
+export default about;

@@ -18,5 +18,3 @@ interface Image {
 
   export {getImageUrl}
 
-  // https://cdn.sanity.io/images/5yt3vrht/production/16d85352a063b3dc81fbedb4245dbb3a1391fabc-1125x1409.jpg
-  // https://cdn.sanity.io/images/5yt3vrht/production/16d85352a063b3dc81fbedb4245dbb3a1391fabc.1125x1409.jpg
