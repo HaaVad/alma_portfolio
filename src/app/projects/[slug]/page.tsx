@@ -62,7 +62,7 @@ console.log(project.images)
         ))}
       </div>
 
-
+      <div className="w-full flex justify-center ">
       {project.videolink ? (
         <div className="">
           <iframe
@@ -75,6 +75,7 @@ console.log(project.images)
           ></iframe>
         </div>
       ) : null}
+    </div>
     </div>
     </main>
   );

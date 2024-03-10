@@ -21,10 +21,10 @@ import Image from 'next/image';
         <div 
         onClick={toggleFullScreen}
         className="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-80 flex items-center justify-center z-50">
-          <Image
+          <img
             src={image}
             alt="Full Size Image"
-            className="my-6 cursor-pointer max-h-full max-w-full"
+            className="my-6 absolute cursor-pointer max-h-full max-w-full"
           />
           <button onClick={toggleFullScreen} className="text-white absolute pr-6 top-2 right-2">
             Close
