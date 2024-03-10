@@ -10,9 +10,11 @@ projects.sort((a, b) => {
 
 });
 
+
+console.log(projects[5])
+
 export default function Home() {
 
-console.log(projects[2].images)
 
   return (
     <main>

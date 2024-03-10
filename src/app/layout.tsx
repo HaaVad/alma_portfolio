@@ -24,8 +24,9 @@ export default function RootLayout({
         </div>
         </header>
       {children}
-      <footer className="h-40 mt-20  bottom-0"> 
-      <div>Alma</div>
+      <footer className="h-40 mt-20  bottom-0 gap-8"> 
+      <h2>Alma</h2>
+      <a href="https://www.vadstein.dev/">Made by Håkon Vadstein</a>
       </footer>
       </body>
     </html>

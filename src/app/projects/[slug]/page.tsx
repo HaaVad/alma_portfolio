@@ -20,7 +20,7 @@ console.log(project.images)
 
 
       <div>
-      <div className="relative h-32 mb-16 w-full flex justify-center items-end">
+      <div className="relative h-fit mb-16 w-full flex justify-center items-end">
             <Image
               src={getImageUrl(project.images[0])}
               alt={project.name}

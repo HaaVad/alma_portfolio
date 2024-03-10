@@ -21,7 +21,7 @@ import Image from 'next/image';
         <div 
         onClick={toggleFullScreen}
         className="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-80 flex items-center justify-center z-50">
-          <img
+          <Image
             src={image}
             alt="Full Size Image"
             className="my-6 cursor-pointer max-h-full max-w-full"
@@ -31,7 +31,7 @@ import Image from 'next/image';
           </button>
         </div>
       ) : (
-        <div className="py-2 relative h-96 w-20 lg:w-96 flex justify-center items-start">
+        <div className="py-2 relative h-96 lg:w-96 flex justify-center items-start">
 
         <Image
         src={image}
