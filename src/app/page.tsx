@@ -25,6 +25,7 @@ export default function Home() {
           <Link 
             href={`/projects/${project.slug}`}             
             >
+
             <div className="relative h-72 w-80 lg:w-96 flex justify-center items-center">
             <Image
               src={getImageUrl(project.images[0])}
@@ -34,7 +35,7 @@ export default function Home() {
               className="object-cover hover:opacity-60 z-30 hover:z-10 saturate-100 hover:saturate-50"
               priority={true}
             />
-            <h2 className="z-20 text-center pointer-events-none">{project.name}</h2>
+            <h2 className={`z-20 text-center ${project.name.length > 20 ? "text-2xl" : "text-3xl"}  pointer-events-none`}>{project.name}</h2>
           </div>
           </Link>
           )}

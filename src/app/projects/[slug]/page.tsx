@@ -15,6 +15,7 @@ export default async function Page({params}: Props) {
 
 console.log(getImageUrl(project.images[0]))
 console.log(project.images)
+
   return (
     <main className="container">
 
@@ -29,7 +30,7 @@ console.log(project.images)
               className="object-cover"
               priority={true}
             />
-        <h2 className="z-40 m-4 text-white bottom-0 drop-shadow-md" >{project.name}</h2>
+        <h2 className={`z-40 m-4 text-white bottom-0 ${project.name.length > 20 ? "text-xl" : "text-3xl"} drop-shadow-xl`} >{project.name}</h2>
 
       </div>
 
@@ -66,7 +67,7 @@ console.log(project.images)
       {project.videolink ? (
         <div className="">
           <iframe
-            className=""
+            className="max-w-full px-3 md:px-0"
             src={project.videolink}
             width="640" 
             height="360"
@@ -76,7 +77,6 @@ console.log(project.images)
       ) : null}
     </div>
     </div>
-
     </main>
   );
 }
