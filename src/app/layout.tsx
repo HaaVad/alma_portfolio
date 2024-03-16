@@ -1,13 +1,15 @@
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
+import Header from "./components/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Alma Getachew",
   description: "Dancer, artist, loca",
+
 };
 
 export default function RootLayout({
@@ -18,11 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <header>
-        <div className="w-min mx-auto">
-        <Link href="/" className=""><h1>Alma</h1></Link>
-        </div>
-        </header>
+        <Header />
       {children}
       <footer className="h-40 mt-20  bottom-0 gap-8"> 
       <h2>Alma</h2>
