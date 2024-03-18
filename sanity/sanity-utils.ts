@@ -18,7 +18,13 @@ import { Project } from "../types/project";
         images[],
       }`;
   
-      const projects = await client.fetch(query);
+      const projects = await client.fetch(query, 
+        {},
+        {next: {
+          revalidate: 3600 // look for updates to revalidate cache every hour
+        }}
+      );
+
   
       if (!projects || !Array.isArray(projects)) {
         throw new Error('Invalid or empty response from Sanity.io');

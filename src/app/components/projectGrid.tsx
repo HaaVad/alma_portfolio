@@ -8,10 +8,10 @@ import { Project } from '../../../types/project';
 
 interface ProjectGridProps {
     projects: Project[];
+    // initial: boolean;
   }
 
   const ProjectGrid: React.FC<ProjectGridProps> = ({ projects }) => {
-
 
 
 
@@ -20,7 +20,7 @@ interface ProjectGridProps {
     <div className="px-4 md:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
     {projects.map((project, index) => (
       <div key={index} 
-    // className={`${initalLoad ? 'fade-in' : ''}`}
+    // className={`${initial ? 'fade-in' : ''}`}
       className="fade-in" 
       style={{ animationDelay: `${1+(index * 0.4)}s` }}>
         {project.images && project.images.length > 0 && (            
