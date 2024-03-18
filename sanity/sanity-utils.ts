@@ -21,7 +21,7 @@ import { Project } from "../types/project";
       const projects = await client.fetch(query, 
         {},
         {next: {
-          revalidate: 3600 // look for updates to revalidate cache every hour
+          revalidate: 0 // look for updates to revalidate cache
         }}
       );
 
