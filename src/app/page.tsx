@@ -2,13 +2,14 @@
 import { getProjects } from "../../sanity/sanity-utils";
 import ProjectGrid from "./components/projectGrid";
 
-const projects = await getProjects();
-projects.sort((a, b) => {
-  return new Date(b.date).getTime() - new Date(a.date).getTime();
-});
+export const revalidate = 0;
 
-export default function Home() {
-  
+async function Home() {
+  const projects = await getProjects();
+  projects.sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
+
 
   return (
     <main>
@@ -17,3 +18,4 @@ export default function Home() {
   );
 }
 
+export default Home;

@@ -21,7 +21,7 @@ interface ProjectGridProps {
     {projects.map((project, index) => (
       <div key={index} 
     // className={`${initial ? 'fade-in' : ''}`}
-      className="fade-in" 
+      // className="fade-in" 
       style={{ animationDelay: `${1+(index * 0.4)}s` }}>
         {project.images && project.images.length > 0 && (            
         <Link 

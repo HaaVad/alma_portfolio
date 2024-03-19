@@ -19,9 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <Header />
+        <div className={`${inter.className} fade-in`}  style={{ animationDelay: `1.5s` }}>
       {children}
+      </div>
       <footer className="h-40 mt-20  bottom-0 gap-8"> 
       <h2>Alma</h2>
       <a href="https://www.vadstein.dev/">Made by Håkon Vadstein</a>
